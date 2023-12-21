@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let character = "A";
+let word = "ABHIRAJ";
+let arr = ["MA", "SA", "I", "SCH", "OOL"];
+
+let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let str1 = "abcdefghijklmnopqrstuvwxyz";
+let charactertolowercase = (character) => {
+    let char1;
+    for (let i = 0; i < str.length; i++) {
+        if(character == str[i]){
+            char1 = str1[i];
+        }
+    }
+    return char1
+}
+
+// charactertolowercase("B")
+
+let st = "";
+
+let wordLower = (word) => {
+for(let i=0;i<word.length;i++){
+    let abc = word[i];
+    st += charactertolowercase(abc);
+}
+console.log(st); 
+}
+wordLower(word);
+
+let finalArr = [];
+let arrLowercase = (arr) =>{
+    for (let i = 0; i < arr.length; i++) {
+        let arr1 = arr[i];
+
+        let stt = "";
+        for(let i=0;i<arr1.length;i++){
+            stt += charactertolowercase(arr1[i]);
+        }
+        finalArr.push(stt);
+    }
+    console.log(finalArr);
+}
+
+arrLowercase(arr)
+
+
+
+
+</script>
+</html>
